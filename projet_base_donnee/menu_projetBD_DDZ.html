@@ -1,0 +1,97 @@
+http://serveur-etu.polytech-lille.fr/~cdjoumek/menu_projetBD_DDZ.html
+
+
+<!Doctype html>
+<html>
+   <head> 
+      <meta charset = "UTF-8">
+   </head>
+   <body>
+     <p>
+     <br/> <br/> <h1> Affichage des publications en fonction des types de publications </h1>
+       <form  action="pubType.php" method="POST">
+           <h3> choisissez le type de la publication </h3>
+           <select name= "typeArt">
+               <option value=></option> 
+               <option value= "conference"> conference </option> <br/>
+               <option value= "livre"> livre </option> <br/>
+               <option value= "these"> these </option> <br/>
+               <option value= "en révision"> revue_scientifique </option> <br/> <br/>
+           </select>
+           <p> <input type="submit" value="Envoyer">
+               <input  type="reset" value="Annuler"> <p/>
+      </form>
+      </p>
+
+
+     <p>
+     <br/> <br/> <h1> Affichage des publications en fonction de leur état </h1>
+       <form  action="pubEtat.php" method="POST">
+           <h3> choisissez l'état de la publication </h3>
+           <select name= "etatArt">
+               <option value=></option> 
+               <option value= "soumis"> soumis </option> <br/>
+               <option value= "accepté"> accepté </option> <br/>
+               <option value= "refusé">refusé</option> <br/>
+               <option value= "en révision">en révision</option> <br/> <br/>
+           </select>
+           <p> <input type="submit" value="Envoyer">
+               <input  type="reset" value="Annuler"> </p>
+      </form>
+      </p>
+     
+     
+
+
+      <p>
+      <br/> <br/> <h1> Affichage des publications en fonction des mots-clés </h1>
+       <form  action="pubMotscles.php" method="POST">
+           <h3> choisissez un mot_clé </h3>
+           <select name= "Motscles">
+               <option value=></option> 
+               <option value= "COMPUTER SCIENCE"> COMPUTER SCIENCE </option> <br/>
+               <option value= "STATISC"> STATISC </option> <br/>
+               <option value= "OPTIMISATION"> OPTIMISATION </option> <br/>
+               <option value= "ALGEBRA"> ALGEBRA </option> <br/>
+               <option value= "TASK ANALYSIS"> TASK ANALYSIS  </option> <br/> <br/>
+           </select>
+           <p> <input type="submit" value="Envoyer">
+               <input  type="reset" value="Annuler"> <p/>
+      </form>
+      </p>
+
+
+
+      <p>
+      <br/> <br/> <h1> affichage des publications en fonction de leur année de publication </h1> 
+      <form action= anneepub.php  method='POST'>
+         <h3> saisissez l'année de publication </h3>
+         <input  type='texte' name= annee_publication size='6' maxlength='4'> <br/> <br/>
+         <p> <input type="submit" value="Envoyer">
+             <input  type="reset" value="Annuler"> <p/>
+      </form>
+      </p>
+
+      
+      <p>
+      <br/> <br/> <h1> modification de l'etat de la publication </h1> 
+      <form action= modifEtatpub.php  method='POST'>
+         <h3> saisissez le titre de l'article </h3>
+         <input  type='texte' name= titre_art size='6' maxlength='100'> <br/> <br/>
+         <h3> saisissez le nouveau etat de l'article </h3>
+         <input type="text" name="NouveauEtat_art" value=" ">
+         <p> <input type="submit" value="Envoyer">
+             <input  type="reset" value="Annuler"> <p/>
+      </form>
+      </p>
+
+
+    
+  </body>
+</html>
+
+
+
+
+
+
